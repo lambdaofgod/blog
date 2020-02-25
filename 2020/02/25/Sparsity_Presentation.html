@@ -120,7 +120,12 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sparse-linear-models-for-image-denoising">Sparse linear models for image denoising<a class="anchor-link" href="#Sparse-linear-models-for-image-denoising">&#182;</a></h3><h4 id="What-will-be-covered">What will be covered<a class="anchor-link" href="#What-will-be-covered">&#182;</a></h4><ul>
+<h1 id="Sparse-linear-models-for-image-denoising">Sparse linear models for image denoising<a class="anchor-link" href="#Sparse-linear-models-for-image-denoising">&#182;</a></h1><ul>
+<li>toc: true </li>
+<li>badges: true</li>
+<li><p>comments: true
+#### What will be covered</p>
+</li>
 <li><p>Introduce sparse methods and concept of sparsity</p>
 </li>
 <li><p>Mention few contexts and approaches</p>
@@ -157,14 +162,6 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Image-denoising">Image denoising<a class="anchor-link" href="#Image-denoising">&#182;</a></h3><p><img src="https://docs.opencv.org/3.1.0/nlm_result1.jpg" alt="" /></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Deblurring">Deblurring<a class="anchor-link" href="#Deblurring">&#182;</a></h3><p><img src="http://alumni.soe.ucsc.edu/~htakeda/KernelDeblurring/images/cameraman_19x19_BSNR40dB_RMSE296733.png" alt="" />
-<img src="http://alumni.soe.ucsc.edu/~htakeda/KernelDeblurring/images/cameraman_19x19_BNSR40dB_Wiener_K00003_RMSE171663.png" alt="" /></p>
 
 </div>
 </div>
@@ -243,20 +240,6 @@ morphological component analysis (MCA)</a></em></p>
 <p>What's the difference between minimizing $\|x\|^2$ and $\|x\|_1$ while solving  $Ax = b$?</p>
 <p>Doesn't minimizing Euclidean norm lead to small coefficients?</p>
 <p>The problem: structure</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="L1-vs-L2---example">L1 vs L2 - example<a class="anchor-link" href="#L1-vs-L2---example">&#182;</a></h2><p>$x \in \mathbb{R}^d, x_i = \sqrt{\frac{1}{d}}$.</p>
-<p>Then</p>
-<p>$\|x\|^2 = \sum_{i=0}^d \frac{1}{d} = 1$</p>
-<p>But</p>
-<p>$\|x\|_1 = \sum_{i=0}^d{\sqrt{\frac{1}{d}}} = d {\sqrt{\frac{1}{d}}} = \sqrt{d}$</p>
-<p>The opposite: note that</p>
-<p>$\|x\| \leq \|x\|_1$</p>
-<p>Because $\sum_i{x_i^2} \leq (\sum_i{x_i})^2$ (convexity)</p>
 
 </div>
 </div>
